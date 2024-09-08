@@ -14,5 +14,5 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  crab-hole = pkgs.callPackage ./pkgs/crab-hole.nix { };
+  crab-hole = pkgs.callPackage ./pkgs/crab-hole { };
 }
