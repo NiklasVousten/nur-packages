@@ -2,7 +2,7 @@
 with lib;
 let
   cfg = config.services.crab-hole;
-  crab-hole = pkgs.callPackage ../../pkgs/crab-hole { };
+  crab-hole = pkgs.callPackage ../../../pkgs/crab-hole { };
 in
 {
   options = {
