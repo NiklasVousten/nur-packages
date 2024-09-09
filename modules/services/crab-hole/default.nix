@@ -2,6 +2,7 @@
 with lib;
 let
   cfg = config.services.crab-hole;
+  crab-hole = pkgs.nur.repos.NiklasVousten.crab-hole;
 in
 {
   options = {
@@ -60,7 +61,7 @@ in
         Group = cfg.group;
         WorkingDirectory = cfg.workDir;
 
-        ExecStart = ''${pkgs.nur.repos.NiklasVousten.crab-hole}/bin/crab-hole'';
+        ExecStart = ''${crab-hole}/bin/crab-hole'';
 
         AmbientCapabilities = "CAP_NET_BIND_SERVICE";
         CapabilityBoundingSet = "CAP_NET_BIND_SERVICE";
